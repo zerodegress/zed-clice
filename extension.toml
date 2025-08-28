@@ -1,0 +1,12 @@
+id = "clice"
+name = "Clice"
+description = "Clice support."
+version = "0.1.0"
+schema_version = 1
+authors = ["ZeroDegress <zerodegress@outlook.com>"]
+repository = "https://github.com/zerodegress/zed-clice"
+
+[language_servers.clice]
+name = "Clice Language Server"
+languages = ["C", "C++"]
+language_ids = { "C" = "c", "C++" = "cpp" }

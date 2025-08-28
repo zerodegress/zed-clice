@@ -1,0 +1,20 @@
+[package]
+name = "zed-clice"
+version = "0.1.0"
+edition = "2024"
+publish = false
+license = "GPL-3.0-only"
+
+[lib]
+path = "src/clice.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+lzma-rs = "0.3.0"
+lzma-rust2 = { version = "0.10.2", default-features = false, features = ["xz"] }
+sevenz-rust2 = { version = "0.18.0", default-features = false, features = [
+    "default_wasm",
+] }
+tar = "0.4.44"
+tar-no-std = "0.4.2"
+zed_extension_api = "0.6.0"
